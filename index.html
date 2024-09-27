@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Press Program</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="key-press-container">
+      <h2>Press Any Key inside the TextBox</h2>
+      <input
+        type="text"
+        title="Press Key"
+        placeholder="Enter Key Here"
+        onkeyup="showkey(event);"
+      />
+      <div class="output">
+        <p>Key: <span id="key" class="output-key">None</span></p>
+        <p>KeyCode: <span id="code" class="output-key">0</span></p>
+      </div>
+    </div>
+  </body>
+</html>
